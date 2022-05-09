@@ -6,7 +6,7 @@ metadata:
     app: hello-world-message
 spec:
   containers:
-  - image: "docker.io/bithavoc/hello-world-env"
+  - image: "docker.io/steadweb/nodejs-env:latest"
     name: hello-world-message
     env:
       - name: MESSAGE
@@ -15,5 +15,5 @@ spec:
             name: hello-world-message
             key: MESSAGE
     ports:
-    - containerPort: 80
+    - containerPort: 8000
       protocol: TCP
