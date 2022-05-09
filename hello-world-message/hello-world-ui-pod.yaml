@@ -8,12 +8,12 @@ spec:
   containers:
   - image: "docker.io/bithavoc/hello-world-env"
     name: hello-world-message
-      env:
-        - name: MESSAGE
-          valueFrom:
-            configMapKeyRef:
-              name: hello-world-message
-              key: MESSAGE
+    env:
+      - name: MESSAGE
+        valueFrom:
+          configMapKeyRef:
+            name: hello-world-message
+            key: MESSAGE
     ports:
     - containerPort: 80
       protocol: TCP
