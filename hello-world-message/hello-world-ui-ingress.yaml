@@ -14,5 +14,5 @@ spec:
           service:
             name: hello-world-message
             port:
-              number: 80
+              number: 8000
         pathType: Exact
