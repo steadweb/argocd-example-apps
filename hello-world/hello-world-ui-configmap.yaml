@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hello-world
+data:
+  NODE_ENV: 'development'
+  API_KEY: 'foo'
